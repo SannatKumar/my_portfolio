@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>PORTFOLIO</h1>
+<h2><a href="my_profile.html">MY PROFILE</a></h2>
+<p>PHP Projects</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <h3><a href="http://www.rajscoreboard.tk/">Scoreboard</a></h3>
+      <p>This is a Scoreboard for two teams.</p>
+      
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <h3><a href="http://sortingscoreboard.tk/">Scoreboard that Sorts</a></h3>
+      <p>This is a Scoreboard that sorts by clicking on the column headings.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <h3><a href="http://yahancv.epizy.com/">Download CV</a></h3>
+      <p>This is an app that gives you CV in PDF Format.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <h3><a href="http://www.rajscoreboard.tk/">User Profile</a></h3>
+      <p>This is an app where user can login and see their details.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <h3>Some Other Work</h3>
+  <p>List all my projects</p>
+  <p>Some Other Achievements</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
